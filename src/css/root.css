@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Antonio';
+    src: url(../assets/fonts/Antonio-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url(../assets/fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+:root {
+    --fontColor: #FFFFFF;
+    --backgroundCard: #070724;
+    --hover: #38384f;
+    --headingColor: #838391;
+    --mercury: #419ebb;
+    --venus: #eda249;
+    --earth: #6f2ed6;
+    --mars: #d14c32;
+    --jupiter: #d83a34;
+    --saturn: #cd5120;
+    --uranus: #1ec2a4;
+    --neptune: #2d68f0;
+
+    --headingXL: normal 5rem 'Antonio', sans-serif;
+    --headingL: normal 2.5rem 'Antonio', sans-serif;
+    --headingM: bold 0.75rem 'Spartan', sans-serif;
+    --headingS: bold 0.688rem 'Spartan', sans-serif;
+    --body: 0.875rem 'Spartan', sans-serif;
+}
+
+* {
+    margin: 0;
+    color: var(--fontColor);
+}
+
+body {
+    font: var(--body);
+    line-height: 1.563rem;
+}
+
+h1 {
+    font: var(--headingXL);
+    line-height: 6.438rem;
+}
+
+h2 {
+    font: var(--headingL);
+    line-height: 3.25rem;
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    font: var(--headingM);
+    line-height: 1.563rem;
+    letter-spacing: 2.6px;
+}
+
+h4 {
+    font: var(--headingS);
+    line-height: 1.563rem;
+    letter-spacing: 1px;
+}
