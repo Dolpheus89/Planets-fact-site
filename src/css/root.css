@@ -31,6 +31,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     color: var(--fontColor);
 }
 
@@ -40,6 +41,10 @@ body {
     height: 100vh;
     background: var(--backgroundCard) url(../assets/images/background-stars.svg) no-repeat;
     background-size: cover;
+}
+
+#root {
+    height: 100%;
 }
 
 h1 {
@@ -63,36 +68,4 @@ h4 {
     font: var(--headingS);
     line-height: 1.563rem;
     letter-spacing: 1px;
-}
-
-.mercury::before {
-    background-color: var(--mercury);
-}
-
-.venus::before {
-    background-color: var(--mercury);
-}
-
-.earth::before {
-    background-color: var(--mercury);
-}
-
-.mars::before {
-    background-color: var(--mercury);
-}
-
-.jupiter::before {
-    background-color: var(--mercury);
-}
-
-.saturn::before {
-    background-color: var(--mercury);
-}
-
-.uranus::before {
-    background-color: var(--mercury);
-}
-
-.neptune::before {
-    background-color: var(--mercury);
 }
