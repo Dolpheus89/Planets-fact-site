@@ -41,6 +41,7 @@ function Navbar ({ onSelectPlanet }) {
                 <li className="saturn" onClick={ handleSelecPlanet }>Saturn</li>
                 <li className="uranus" onClick={ handleSelecPlanet }>Uranus</li>
                 <li className="neptune" onClick={ handleSelecPlanet }>Neptune</li>
+                <img src="../assets/images/" alt="" />
             </ul>
             </div>
         </nav>

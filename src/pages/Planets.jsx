@@ -8,6 +8,8 @@ function Planets () {
     const handleSelectPlanet = (planet) => {
     setSelectedPlanet(planet);
     };
+
+
     return (
         <>
             <Navbar onSelectPlanet={handleSelectPlanet}/>
