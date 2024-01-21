@@ -33,12 +33,13 @@
     margin: 0;
     padding: 0;
     color: var(--fontColor);
+    box-sizing: content-box;
 }
 
 body {
     font: var(--body);
     line-height: 1.563rem;
-    height: 100vh;
+    max-height: 100vh;
     background: var(--backgroundCard) url(../assets/images/background-stars.svg) no-repeat;
     background-size: cover;
 }

@@ -13,7 +13,9 @@ function Planets () {
     return (
         <>
             <Navbar onSelectPlanet={handleSelectPlanet}/>
-            <MainInfos selectedPlanet={selectedPlanet}/>
+            <main>
+                <MainInfos selectedPlanet={selectedPlanet}/>
+            </main>
         </>
     )
 }

@@ -136,6 +136,7 @@ nav {
             width: 100%;
             background-color: var(--backgroundCard);
             transition: 1.2s;
+            z-index: 3;
 
             ul {
                 list-style: none;
@@ -152,6 +153,10 @@ nav {
                     font: bold 1rem 'Spartan';
                     border-bottom: 1px solid #b3b3b330;
                     text-transform: uppercase;
+
+                    img {
+                        margin-left: auto;
+                    }
                 }
 
                 li:hover {
@@ -164,27 +169,20 @@ nav {
 
                 li:before {
                     content: "";
-                    display: flex;
                     width: 20px;
                     height: 20px;
                     border-radius: 50%;
-                    position: relative;
                     margin-right: 2rem;
                 }
 
-                li:after {
-                    content: ">";
-                    color: #b3b3b330;
-                    display: flex;
+                li::after {
+                    content: "";
+                    background: url(../assets/images/icon-chevron.svg) no-repeat center;
+                    margin-left: auto;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
-                    position: relative;
-                    margin-left: auto;
                 }
             }
-
         }
-
     }
 }

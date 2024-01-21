@@ -1,0 +1,274 @@
+#InfosContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+
+    #imgContainer {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    #surface {
+        position: absolute;
+        height: 200px;
+        align-self: center;
+        top: 65%;
+    }
+}
+
+#globalInfos {
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    align-self: center;
+    margin-right: 10rem;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    #content {
+        margin: 2rem 0;
+    }
+
+    #source {
+        a {
+            margin: 0 5px;
+            font-weight: bold;
+        }
+    }
+
+    #choiceContainer {
+        margin: 2rem 0;
+
+        label {
+            display: flex;
+            border: 1px solid var(--hover);
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 1.563rem;
+            letter-spacing: 2.6px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 1.5rem 0;
+
+            &:hover {
+                background-color: var(--hover);
+            }
+
+
+            input[type=radio] {
+                display: none;
+            }
+
+            span {
+                color: var(--headingColor);
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    #InfosContainer {
+        flex-wrap: wrap;
+        margin: 0;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        #content {
+            margin: 1rem 0;
+        }
+
+        #imgContainer {
+            margin: 2rem;
+
+            #planet {
+                width: 50%
+            }
+
+            #surface {
+                scale: 0.5;
+                top: 35%;
+            }
+        }
+
+    }
+
+    #globalInfos {
+        display: flex;
+        width: 90%;
+        margin: 0;
+
+        #textInfos {
+            flex: 1;
+        }
+
+        #choiceContainer {
+            flex: 1;
+            margin: 2rem;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:775px) {
+
+    #InfosContainer {
+
+
+        #imgContainer {
+            margin-top: 6rem;
+
+            #planet {
+                width: 50%
+            }
+
+            #surface {
+                scale: 0.5;
+                top: 35%;
+            }
+        }
+
+    }
+
+
+    #globalInfos {
+        width: 100%;
+        text-align: center;
+
+        #textInfos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+
+            p {
+                width: 65%;
+            }
+        }
+
+        #choiceContainer {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            top: 85px;
+            margin: 0;
+            width: 100%;
+            border-bottom: 1px solid var(--headingColor);
+
+            label {
+                border: unset;
+                margin: 0 1rem;
+                padding: 1rem 0;
+                background-color: transparent;
+                position: relative;
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 5px;
+                    position: absolute;
+                    bottom: 0px;
+                }
+
+                p {
+                    font-size: 0.7rem;
+
+                    &:hover {
+                        color: var(--headingColor);
+                    }
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:555px) {
+    #globalInfos {
+        #choiceContainer {
+
+            label {
+                margin: 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:455px) {
+    #globalInfos {
+        #choiceContainer {
+
+            label {
+                padding: 10px 5px;
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.Mercury,
+.Mercury::after {
+    background-color: var(--mercury);
+}
+
+.Venus,
+.Venus::after {
+    background-color: var(--venus);
+}
+
+.Earth,
+.Earth::after {
+    background-color: var(--earth);
+}
+
+.Mars,
+.Mars::after {
+    background-color: var(--mars);
+}
+
+.Jupiter,
+.Jupiter::after {
+    background-color: var(--jupiter);
+}
+
+.Saturn,
+.Saturn::after {
+    background-color: var(--saturn);
+}
+
+.Uranus,
+.Uranus::after {
+    background-color: var(--uranus);
+}
+
+.Neptune,
+.Neptune::after {
+    background-color: var(--neptune);
+}
