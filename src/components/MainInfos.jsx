@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import {useState} from "react"
-import planetData from "../../data.json";
+import getPlanetInfo  from "./Findplanet";
 import "../css/MainInfos.css"
 
 function MainInfos ({selectedPlanet}) {
     const [imgsPLanet, setImgsPlanet] = useState("planet")
-    const planetInfo = planetData.find((planet) => planet.name === selectedPlanet);
+    const planetInfo = getPlanetInfo(selectedPlanet);
     const imgPlanet = planetInfo.images[imgsPLanet];
     let infos = planetInfo.overview
 
