@@ -92,7 +92,7 @@ nav {
 
         #deskMenu {
             padding: 0;
-            margin-top: 3rem;
+            margin-top: 1.9rem;
 
             li:hover:before {
                 top: 100%;
@@ -132,7 +132,7 @@ nav {
         #burgerContainer {
             /* display: initial; */
             position: absolute;
-            top: 6rem;
+            top: 5.45rem;
             width: 100%;
             background-color: var(--backgroundCard);
             transition: 1.2s;
@@ -141,7 +141,7 @@ nav {
             ul {
                 list-style: none;
                 width: 100%;
-                height: calc(100vh - 6rem);
+                height: calc(100vh - 5.45rem);
 
                 li {
                     cursor: pointer;
